@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "applicantinfo")
 public class JobApplicantEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
     public String applicantname;
     public String applicantskills;

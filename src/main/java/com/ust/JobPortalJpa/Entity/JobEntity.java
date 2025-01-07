@@ -7,6 +7,7 @@ import java.util.List;
 @Table(name = "jobinfo")
 public class JobEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
     public String jobrole;
     public String jobdescription;
